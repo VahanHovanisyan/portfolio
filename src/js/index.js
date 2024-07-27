@@ -1,7 +1,7 @@
 "use strict";
 import "./language/index.js";
 
-export const URL = "http://localhost:1337";
+export const URL = "https://thoughtful-prosperity-d975010096.strapiapp.com/api";
 
 fetch(`${URL}/api/hero?populate=*`)
 	.then((res) => res.json())
