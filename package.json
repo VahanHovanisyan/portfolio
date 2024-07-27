@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"private": true,
-	"homepage": "https://github.com/VahanHovanisyan/portfolio",
+	"homepage": "https://github.com/VahanHovanisyan/portfolio/docs",
 	"type": "module",
 	"scripts": {
 		"dev": "gulp dev",
