@@ -1,5 +1,6 @@
 // import { langList } from "./langList.js";
 import { URL } from "../index.js";
+import { rating } from "../index.js";
 const buttonRu = document.querySelectorAll(".language__button--ru");
 const buttonEng = document.querySelectorAll(".language__button--eng");
 
@@ -60,12 +61,15 @@ function changeLanguage(lang) {
 							title.textContent = data.title;
 							const text = document.querySelector(".skills__text");
 							text.innerHTML = data.text;
+							console.log(data.skillitems);
 
-							data.skillitems.forEach((item, index) => {
-								document.querySelectorAll(".skills__item-title")[
-									index
-								].textContent = item.title;
-							});
+							document
+								.querySelectorAll(".skills__item-title")
+								.forEach((card, index) => {
+									if (card.textContent === item.title) {
+										card.textContent = data.skillitems[index].text;
+									}
+								});
 						}
 
 						if (entry.target.dataset.langs === "contact") {

@@ -6,13 +6,14 @@ export const URL = "https://thoughtful-prosperity-d975010096.strapiapp.com";
 fetch(`${URL}/api/hero?populate=*`)
 	.then((res) => res.json())
 	.then(({ data }) => {
+		console.log(data);
 		document
 			.querySelector(".hero__img")
-			.setAttribute("src", `${URL}` + data.img_mobile.url);
+			.setAttribute("src", data.img_mobile.url);
 
 		document
 			.querySelector(".hero__picture source")
-			.setAttribute("srcset", `${URL}` + data.img_desktop.url);
+			.setAttribute("srcset", data.img_desktop.url);
 	});
 
 fetch(`${URL}/api/skillitems?populate=*`)
@@ -22,7 +23,7 @@ fetch(`${URL}/api/skillitems?populate=*`)
 			const card = document.createElement("li");
 			card.classList.add("skills__item");
 			card.innerHTML = `
-				<img class="skills__img" src="${URL}${item.img.url}" alt="${item.title}">
+				<img class="skills__img" src="${item.img.url}" alt="${item.title}">
 				<h3 class="skills__item-title">${item.title}</h3>
 				<svg
 					class="skills__rating"
@@ -67,7 +68,7 @@ fetch(`${URL}/api/portfolioitems?populate=*`)
 			const card = document.createElement("li");
 			card.classList.add("slider__slide", "portfolio__slide");
 			card.innerHTML = `
-				<img class="portfolio__slide-img" src="${URL}${item.img.url}" alt="${item.img.alternativeText}">
+				<img class="portfolio__slide-img" src="${item.img.url}" alt="${item.img.alternativeText}">
 				<a class="portfolio__slide-link" href="${item.link}">${item.title}</a>
 			`;
 			document.querySelector(".portfolio__list").appendChild(card);
@@ -125,7 +126,7 @@ function slider(elem) {
 	return slider;
 }
 
-function rating() {
+export function rating() {
 	const rating = document.querySelectorAll(".skills__rating");
 	rating.forEach((item) => {
 		const ratingValue = item.dataset.rating;
