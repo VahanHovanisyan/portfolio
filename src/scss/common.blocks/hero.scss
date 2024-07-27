@@ -1,0 +1,68 @@
+.hero {
+	padding: 30px 0;
+
+	// .hero__container
+
+	&__container {
+	}
+
+	@include burger-X(30px, 20px, 3px, #000, 576px);
+
+	.burger {
+		z-index: 10;
+		margin-top: 10px;
+	}
+
+	// .hero__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@media (min-width: 576px) {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	// .hero__title
+
+	&__title {
+		@include media-adaptiv-font(47, 35);
+		margin: 0;
+	}
+
+	// .hero__name-wrapper
+	&__name-wrapper {
+		display: flex;
+
+		justify-content: space-between;
+	}
+
+	// .hero__descr
+
+	&__text {
+	}
+
+	&__language {
+		display: none;
+
+		@media (min-width: 576px) {
+			display: block;
+		}
+	}
+
+	// .hero__picture
+
+	&__picture {
+	}
+
+	// .hero__img
+
+	&__img {
+		width: 100%;
+		min-height: 290px;
+		object-fit: cover;
+	}
+}

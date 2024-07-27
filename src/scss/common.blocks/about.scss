@@ -1,0 +1,37 @@
+.about {
+	background: var(--backround-color);
+	padding: 50px 0 50px 0;
+
+	// .about__container
+
+	&__container {}
+
+
+	// .about__content
+
+	&__content {
+		max-width: 485px;
+		text-align: center;
+		margin: 0 auto;
+
+	}
+
+	// .about__title
+
+	&__title {
+		text-align: center;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	// .about__text
+
+	&__text {
+		margin: 0;
+		line-height: 22px;
+
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
+	}
+}

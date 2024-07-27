@@ -1,0 +1,16 @@
+:root {
+	// base
+	--font-family: "Gilroy", "sans-serif";
+	--content-width: 945px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--main-color: #000;
+	--light-color: #828282;
+	--backround-color: #f6f6f6;
+
+	// font-size
+	--text-size: 18px;
+	--title-size: 34px;
+}

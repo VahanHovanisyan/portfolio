@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 340px;
+	list-style: none;
+
+	// .social__item
+
+	&__item {
+
+	}
+
+	// .social__link
+
+	&__link {
+
+
+		// .social__link_fb
+
+		&_fb {}
+
+
+		// .social__link_in
+
+		&_in {}
+
+		// .social__link_inst
+
+		&_inst {}
+
+		// .social__link_yt
+
+		&_yt {}
+	}
+
+	// .social__icon
+
+	&__icon {
+		width: 50px;
+		height: 50px;
+		transition: fill 0.3s;
+
+		&:hover{
+			fill: rgb(161, 147, 147);
+		}
+	}
+}

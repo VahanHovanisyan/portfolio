@@ -1,0 +1,29 @@
+@import "./config-scss/mixin.scss";// mixin
+@import "./config-scss/vars.scss";// vars
+@import "./config-scss/fonts.scss";// fonts
+@import "./config-scss/global.scss";// global
+@import "./config-scss/reset-class.scss";// reset-class
+@import "./config-scss/mix-class.scss";// mix-class
+@import "./common.blocks/page.scss";// page
+@import "./common.blocks/page__body.scss";// page__body
+@import "./common.blocks/nav.scss";// nav
+@import "./common.blocks/header.scss";// header
+@import "./common.blocks/main.scss";// main
+
+
+// commoc blocks
+@import "./common.blocks/language.scss";// language
+@import "./common.blocks/slider.scss";// slider
+@import "./common.blocks/social.scss";// social
+// commoc blocks
+
+// sections
+@import "./common.blocks/hero.scss";// hero
+@import "./common.blocks/about.scss";// about
+@import "./common.blocks/skills.scss";// skills
+@import "./common.blocks/portfolio.scss";// portfolio
+@import "./common.blocks/contacts.scss";// contacts
+// /sections
+
+@import "./common.blocks/footer.scss";// footer
+@import "./common.blocks/popup.scss";// popup

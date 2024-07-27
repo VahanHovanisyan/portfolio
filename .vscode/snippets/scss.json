@@ -1,0 +1,168 @@
+{
+	"reset-css": {
+		"scope": "scss",
+		"prefix": "reset",
+		"body": [
+			"*,*:before,*:after{box-sizing:inherit}",
+			"html{box-sizing:border-box}"
+		],
+		"description": "reset styles"
+	},
+	"magic transition": {
+		"scope": "scss",
+		"prefix": "tr",
+		"body": "transition: $1 0.3s ease 0s;",
+		"description": "transition"
+	},
+	"magic animation": {
+		"scope": "scss",
+		"prefix": "animation",
+		"body": "animation: name 1s ease infinite alternate 0s forwards;",
+		"description": "animation"
+	},
+	"transform-universal": {
+		"scope": "scss",
+		"prefix": "transform",
+		"body": "transform: translate(0, 0) scale(1, 1) rotate( 0deg) skew(0deg, 0deg);",
+		"description": "transform-universal"
+	},
+	"margin auto": {
+		"scope": "scss",
+		"prefix": "m",
+		"body": "margin: 0 auto;",
+		"description": "margin auto"
+	},
+	"media 1440px": {
+		"scope": "scss",
+		"prefix": "6",
+		"body": "@media(max-width:1440px){$1}",
+		"description": "media 1440px"
+	},
+	"Extra large devices": {
+		"scope": "scss",
+		"prefix": "5",
+		"body": "@media(min-width:1200px){$1}",
+		"description": "Extra large devices (large desktops, 1200px and up)"
+	},
+	"Large devices": {
+		"scope": "scss",
+		"prefix": "4",
+		"body": "@media(min-width:992px){$1}",
+		"description": "Large devices (desktops, 992px and up)"
+	},
+	"Medium devices": {
+		"scope": "scss",
+		"prefix": "3",
+		"body": "@media(min-width:768px){$1}",
+		"description": "Medium devices (tablets, 768px and up)"
+	},
+	"Small devices": {
+		"scope": "scss",
+		"prefix": "2",
+		"body": "@media(min-width:576px){$1}",
+		"description": "Small devices (landscape phones, 576px and up)"
+	},
+	"Extra small": {
+		"scope": "scss",
+		"prefix": "1",
+		"body": "@media(max-width:575.98px){$1}",
+		"description": "Extra small devices (portrait phones, less than 576px)"
+	},
+	"margin": {
+		"scope": "scss",
+		"prefix": "mm",
+		"body": [
+			"margin: 0 0 0 0;"
+		],
+		"description": "margin"
+	},
+	"padding": {
+		"scope": "scss",
+		"prefix": "pp",
+		"body": [
+			"padding: 0 0 0 0;"
+		],
+		"description": "padding"
+	},
+	"adaptive calc": {
+		"scope": "scss",
+		"prefix": "c",
+		"body": [
+			"calc($1px + ($2 - $3) * ((100vw - 320px) / ($4 - 320)));"
+		],
+		"description": "adaptive calc"
+	},
+	"adaptive all mixin": {
+		"scope": "scss",
+		"prefix": "all",
+		"body": [
+			"@include media-adaptiv-all(property,max,min);"
+		],
+		"description": "adaptive all property mixin"
+	},
+	"adaptive font mixin": {
+		"scope": "scss",
+		"prefix": "font",
+		"body": [
+			"@include media-adaptiv-font(max,min);"
+		],
+		"description": "adaptive font-size mixin"
+	},
+	"burger custom": {
+		"scope": "scss",
+		"prefix": "burger-custom",
+		"body": [
+			"@include burger-custom (width,height,height-line,color-line,visible-when) {",
+			"/*property: burger__line*/",
+			".burger__line {",
+			"&_top {",
+			"}",
+			"&_middle {",
+			"}",
+			"&_bottom {",
+			"}",
+			"}",
+			"/*property: burger_active*/",
+			"&_active {",
+			".burger__line {",
+			"&_top {",
+			"}",
+			"&_middle {",
+			"}",
+			"&_bottom {",
+			"}",
+			"}",
+			"}",
+			"}"
+		],
+		"description": "burger X"
+	},
+	"burger custom x": {
+		"scope": "scss",
+		"prefix": "burger-x",
+		"body": [
+			"@include burger-X(width,height,height-line,color-line,visible-when);"
+		],
+		"description": "burger X"
+	},
+	"hover": {
+		"scope": "scss",
+		"prefix": "hover",
+		"body": [
+			"@include hover{",
+				"&:hover {",
+					"$1",
+				"}",
+			"};"
+		],
+		"description": "hover"
+	},
+	"hover none": {
+		"scope": "scss",
+		"prefix": "hover-none",
+		"body": [
+			"@include hover-none{};"
+		],
+		"description": "hover none"
+	}
+}

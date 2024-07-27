@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "flex-direction",
+          "flex",
+          "-ms-text-size-adjust",
+          "scroll-behavior",
+          "scroll-snap-stop",
+          "backface-visibility",
+          "scrollbar-width",
+          "max-width: fit-content",
+          "-webkit-text-size-adjust"
+        ]
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ie <= 9"
+  ]
+}

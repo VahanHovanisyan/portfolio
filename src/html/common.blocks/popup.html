@@ -1,0 +1,44 @@
+<div class="popup">
+	<div class="popup__content">
+		<button class="popup__button-close" data-lang="popup-buttonClose">
+			Close
+		</button>
+		<form action="https://api.web3forms.com/submit" method="POST" class="form">
+			<input
+				type="hidden"
+				name="access_key"
+				value="6b4e70b3-3793-4c97-82fc-4d384f4e1455"
+			/>
+			<label class="form__label"
+				><span data-lang="popup-name">Name</span>
+				<input type="text" name="name" class="form__input input-reset" />
+			</label>
+			<label class="form__label"
+				><span data-lang="popup-email">Email</span>
+				<input type="email" name="email" class="form__input input-reset" />
+			</label>
+			<label class="form__label"
+				><span data-lang="popup-phone">Phone</span>
+				<input type="tel" name="tel" class="form__input input-reset" />
+			</label>
+			<textarea
+				class="form__textarea"
+				name="message"
+				id=""
+				data-lang="popup-message"
+				placeholder="Message"
+			></textarea>
+
+			<input
+				type="checkbox"
+				name="botcheck"
+				class="hidden"
+				style="display: none"
+			/>
+			<input type="hidden" name="redirect" value="http://localhost:3000" />
+			<button class="form__button button-reset" data-lang="popup-buttonSend">
+				Send
+			</button>
+		</form>
+	</div>
+</div>
